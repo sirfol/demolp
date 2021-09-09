@@ -17,6 +17,9 @@
     }(window, document);</script>
     <link href="logo.png" rel="shortcut icon" type="image/x-icon"/>
     <link href="logo.png" rel="apple-touch-icon"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
 <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navigation w-nav">
@@ -72,35 +75,47 @@
 <div class="section">
     <div class="container">
         <div class="blog-heading"><h2 class="work-heading">Места</h2></div>
-        <div data-duration-in="300" data-duration-out="100" class="w-tabs">
-            <div class="w-tab-menu"><a data-w-tab="Светомузыкальный фонтан"
-                                       class="tab-link-2 w-inline-block w-tab-link">
-                <div>Светомузыкальный фонтан</div>
-            </a><a data-w-tab="Памятник А.С. Пушкину" class="tab-link w-inline-block w-tab-link">
-                <div>Памятник А.С. Пушкину<br/></div>
-            </a><a data-w-tab="Крепостная гора" class="tab-link-3 w-inline-block w-tab-link w--current">
-                <div>Крепостная гора</div>
-            </a></div>
-            <div class="w-tab-content">
-                <div data-w-tab="Светомузыкальный фонтан" class="w-tab-pane"><img
-                        src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e36f4dd00d2c5ff0078a_caption.jpg"
-                        loading="lazy" sizes="100vw"
-                        srcset="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e36f4dd00d2c5ff0078a_caption-p-500.jpeg 500w, https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e36f4dd00d2c5ff0078a_caption-p-800.jpeg 800w, https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e36f4dd00d2c5ff0078a_caption.jpg 1200w"
-                        alt=""/></div>
-                <div data-w-tab="Памятник А.С. Пушкину" class="w-tab-pane"><img
-                        src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e432e056287ef0d7d2b0_caption.jpg"
-                        loading="lazy" sizes="100vw"
-                        srcset="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e432e056287ef0d7d2b0_caption-p-500.jpeg 500w, https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e432e056287ef0d7d2b0_caption-p-800.jpeg 800w, https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e432e056287ef0d7d2b0_caption.jpg 1200w"
-                        alt=""/></div>
-                <div data-w-tab="Крепостная гора" class="w-tab-pane w--tab-active"><img
-                        src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e48b27eb4d4b746a6a1a_caption.jpg"
-                        loading="lazy" sizes="100vw"
-                        srcset="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e48b27eb4d4b746a6a1a_caption-p-500.jpeg 500w, https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e48b27eb4d4b746a6a1a_caption-p-800.jpeg 800w, https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e48b27eb4d4b746a6a1a_caption.jpg 1200w"
-                        alt=""/></div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide section" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e36f4dd00d2c5ff0078a_caption.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white">Светомузыкальный фонтан</h5>
+                        <a style="z-index: 10" href="https://yandex.ru/maps/org/muzykalny_fontan/35518213868/" class="btn btn-primary" role="button">Маршрут</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e432e056287ef0d7d2b0_caption.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Памятник А.С. Пушкину</h5>
+                        <a style="z-index: 10" href="https://yandex.ru/maps/org/a_s_pushkin/166514570742/" class="btn btn-primary" role="button">Маршрут</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e48b27eb4d4b746a6a1a_caption.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Крепостная стена</h5>
+                        <a style="z-index: 10" href="https://yandex.ru/maps/org/krepostnaya_stena/36044235612/" class="btn btn-primary" role="button">Маршрут</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </div>
+
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6138da237cabc830c0ea1841"
         type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
