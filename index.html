@@ -17,9 +17,14 @@
     }(window, document);</script>
     <link href="logo.png" rel="shortcut icon" type="image/x-icon"/>
     <link href="logo.png" rel="apple-touch-icon"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+            integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
 <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navigation w-nav">
@@ -75,43 +80,55 @@
 <div class="section">
     <div class="container">
         <div class="blog-heading"><h2 class="work-heading">Места</h2></div>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide section" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e36f4dd00d2c5ff0078a_caption.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: white">Светомузыкальный фонтан</h5>
-                        <a style="z-index: 10" href="https://yandex.ru/maps/org/muzykalny_fontan/35518213868/" class="btn btn-primary" role="button">Маршрут</a>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e432e056287ef0d7d2b0_caption.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Памятник А.С. Пушкину</h5>
-                        <a style="z-index: 10" href="https://yandex.ru/maps/org/a_s_pushkin/166514570742/" class="btn btn-primary" role="button">Маршрут</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e48b27eb4d4b746a6a1a_caption.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Крепостная стена</h5>
-                        <a style="z-index: 10" href="https://yandex.ru/maps/org/krepostnaya_stena/36044235612/" class="btn btn-primary" role="button">Маршрут</a>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+        <!--<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-fontan-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-fontan" type="button" role="tab" aria-controls="v-pills-fontan"
+                    aria-selected="true">Светомузыкальный фонтан
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button class="nav-link" id="v-pills-Pushkin-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Pushkin"
+                    type="button" role="tab" aria-controls="v-pills-Pushkin" aria-selected="false">Памятник А.С. Пушкину
             </button>
+            <button class="nav-link" onclick="document.location='#url_stena'" id="v-pills-stena-tab"
+                    data-bs-toggle="pill" data-bs-target="#v-pills-stena" type="button" role="tab"
+                    aria-controls="v-pills-stena" aria-selected="false">Крепостная стена
+            </button>
+        </div>-->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-fontan-tab" data-bs-toggle="pill" data-bs-target="#pills-fontan"
+                        type="button" role="tab" aria-controls="pills-fonatn" aria-selected="true">Светомузыкальный фонтан
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Pushkin-tab" data-bs-toggle="pill" data-bs-target="#pills-Pushkin"
+                        type="button" role="tab" aria-controls="pills-Pushkin" aria-selected="false">Памятник А.С. Пушкину
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-stena-tab" data-bs-toggle="pill" data-bs-target="#pills-stena"
+                        type="button" role="tab" aria-controls="pills-stena" aria-selected="false">Крепостная стена
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-fontan" role="tabpanel" aria-labelledby="pills-fontan-tab">
+                <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e36f4dd00d2c5ff0078a_caption.jpg"
+                     class="d-block w-100" alt="...">
+                <a style="z-index: 10; margin: 5px" href="https://yandex.ru/maps/org/muzykalny_fontan/35518213868/"
+                   class="btn btn-outline-info" role="button">Маршрут</a>
+            </div>
+            <div class="tab-pane fade" id="pills-Pushkin" role="tabpanel" aria-labelledby="pills-Pushkin-tab">
+                <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e432e056287ef0d7d2b0_caption.jpg"
+                     class="d-block w-100" alt="...">
+                <a style="z-index: 10; margin: 5px" href="https://yandex.ru/maps/org/a_s_pushkin/166514570742/"
+                   class="btn btn-outline-info" role="button">Маршрут</a>
+            </div>
+            <div class="tab-pane fade" id="pills-stena" role="tabpanel" aria-labelledby="pills-stena-tab">
+                <img src="https://uploads-ssl.webflow.com/6138da237cabc830c0ea1841/6138e48b27eb4d4b746a6a1a_caption.jpg"
+                     class="d-block w-100" alt="...">
+                <a style="z-index: 10; margin: 5px" id="url_stena" href="https://yandex.ru/maps/org/krepostnaya_stena/36044235612/"
+                   class="btn btn-outline-info" role="button">Маршрут</a>
+            </div>
         </div>
     </div>
 </div>
